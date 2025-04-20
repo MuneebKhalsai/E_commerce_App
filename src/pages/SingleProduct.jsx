@@ -1,6 +1,14 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
+import { addToCart } from '@/config/reducers/cartslice';
+
+
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({ title, description, image, id, price }));
+    toast.success(`${title} has been added to your cart!`);
+  };
 
 const SingleProduct = (title, description, image, id,price) => {
   const params = useParams()
@@ -78,7 +86,7 @@ const SingleProduct = (title, description, image, id,price) => {
           </div>
 
           {/* Add to Cart Button */}
-          <button onClick={() => dispatch(addToCart({title, description, image , id, price}))} className="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-200">
+          <button onClick={handleAddToCart} className="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-200">
             Add to Cart
           </button>
         </div>
