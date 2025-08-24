@@ -3,7 +3,7 @@ import useFetch from '../hooks/useFetch'
 import Card from '../component/Card'
 
 const Products = () => {
-    const [loading, error, data] = useFetch('https://dummyjson.com/products/category/groceries')
+    const [loading, error, data] = useFetch('https://dummyjson.com/products/category/kitchen-accessories')
     
 
     if (loading) {
