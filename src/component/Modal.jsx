@@ -8,7 +8,7 @@ const Modal = ({ isOpen, onClose, title, message }) => {
 
   const handleClose = () => {
     onClose();          // Modal close state update
-    navigate('');      // Navigate to Home page
+    navigate('/');      // Navigate to Home page
   };
 
   return (
@@ -20,7 +20,7 @@ const Modal = ({ isOpen, onClose, title, message }) => {
           onClick={handleClose}
           className="bg-green-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-800 transition"
         >
-          Close
+          Back To Home
         </button>
       </div>
     </div>
