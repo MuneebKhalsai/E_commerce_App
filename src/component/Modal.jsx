@@ -8,7 +8,7 @@ const Modal = ({ isOpen, onClose, title, message }) => {
 
   const handleClose = () => {
     onClose();          // Modal close state update
-    navigate("");      // Navigate to Home page
+    navigate('');      // Navigate to Home page
   };
 
   return (
