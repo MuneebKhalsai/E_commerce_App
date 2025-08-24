@@ -33,7 +33,7 @@ function Navbar() {
         {/* Links */}
         <div className={`md:flex md:items-center ${isOpen ? 'block mt-4' : 'hidden'} md:mt-0 md:block`}>
           <ul className="flex flex-col md:flex-row gap-6 text-lg font-medium">
-            <li><Link to="/home" className="hover:text-green-400 transition">Home</Link></li>
+            <li><Link to="/" className="hover:text-green-400 transition">Home</Link></li>
             <li><Link to="/products" className="hover:text-green-400 transition">Products</Link></li>
             <li><Link to="/service" className="hover:text-green-400 transition">Services</Link></li>
             <li><Link to="/contact" className="hover:text-green-400 transition">Contact</Link></li>
