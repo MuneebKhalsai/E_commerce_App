@@ -75,18 +75,19 @@ const SingleProduct = (title, description, image, id,price) => {
 
 
           <div className="space-y-3">
-            <img
-              src="https://assets.dummyjson.com/public/qr-code.png"
-              alt="QR Code"
-              className="w-24 h-24 border rounded-md shadow-sm"
-            />
+           <img
+  src="https://dummyimage.com/150x150/000/fff.png&text=QR+Code"
+  alt="QR Code"
+  className="w-24 h-24 border rounded-md shadow-sm"
+/>
+
             <p className="text-sm text-gray-600">
               <strong>Barcode:</strong> {data.sku}
             </p>
           </div>
 
           {/* Add to Cart Button */}
-          <button onClick={handleAddToCart} className="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-200">
+          <button onClick={handleAddToCart} className="w-full py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-200">
             Add to Cart
           </button>
         </div>

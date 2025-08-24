@@ -32,14 +32,14 @@ const Card = ({ title, description, image, id, price }) => {
 
         <div className="card-actions mt-6 flex justify-between gap-0">
           <button
-            className="btn btn-primary px-6 py-2 rounded-md text-white bg-blue-500 hover:bg-blue-600 transition-all duration-200"
+            className="btn btn-primary px-6 py-2 rounded-md text-white bg-green-500 hover:bg-green-600 transition-all duration-200"
             onClick={() => navigate(`/product/${id}`)}
           >
             See More
           </button>
           <button
             onClick={handleAddToCart}
-            className="btn btn-secondary px-6 py-2 rounded-md text-white bg-blue-500 hover:bg-blue-600 transition-all duration-200"
+            className="btn btn-secondary px-6 py-2 rounded-md text-white bg-green-500 hover:bg-green-600 transition-all duration-200"
           >
             Add to Cart
           </button>
